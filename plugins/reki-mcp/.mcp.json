@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "reki": {
+      "type": "http",
+      "url": "https://api.reki.eu/api/mcp/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_token}"
+      }
+    }
+  }
+}

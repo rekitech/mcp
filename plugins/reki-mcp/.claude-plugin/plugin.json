@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "reki-mcp",
+  "version": "0.1.0",
+  "description": "Connect Claude to Reki's funding copilot for French startups (CIR, JEI, BPI, PI R&D, France 2030).",
+  "author": {
+    "name": "Reki",
+    "email": "support@reki.eu"
+  },
+  "homepage": "https://reki.eu",
+  "repository": "https://github.com/rekitech/mcp",
+  "license": "MIT",
+  "keywords": ["reki", "funding", "france", "mcp"],
+  "userConfig": {
+    "api_token": {
+      "type": "string",
+      "title": "Reki API key",
+      "description": "Your rk_live_... key. Create one at https://mcp.reki.eu/settings/api-keys.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "mcpServers": "./.mcp.json"
+}

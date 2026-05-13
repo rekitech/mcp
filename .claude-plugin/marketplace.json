@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "reki",
+  "owner": {
+    "name": "Reki",
+    "email": "support@reki.eu"
+  },
+  "description": "Reki plugins for Claude — funding copilot for French startups.",
+  "plugins": [
+    {
+      "name": "reki-mcp",
+      "source": "./plugins/reki-mcp",
+      "description": "Connect Claude to Reki's funding copilot for French startups.",
+      "homepage": "https://reki.eu",
+      "license": "MIT",
+      "keywords": ["reki", "funding", "france", "cir", "jei", "bpi", "pi-r&d"],
+      "category": "productivity"
+    }
+  ]
+}
