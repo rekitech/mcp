@@ -36,7 +36,7 @@ The plugin format is Claude-specific, but the underlying MCP server is the same.
   "mcpServers": {
     "reki": {
       "type": "http",
-      "url": "https://api.reki.eu/api/mcp/v1/mcp",
+      "url": "https://backend.reki.eu/api/mcp/v1/mcp",
       "headers": {
         "Authorization": "Bearer <YOUR_KEY>"
       }

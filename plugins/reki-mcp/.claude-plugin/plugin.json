@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "reki-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Connect Claude to Reki's funding copilot for French startups (CIR, JEI, BPI, PI R&D, France 2030).",
   "author": {
     "name": "Reki",
