@@ -15,7 +15,7 @@
     "api_token": {
       "type": "string",
       "title": "Reki API key",
-      "description": "Your rk_live_... key. Create one at https://mcp.reki.eu/settings/api-keys.",
+      "description": "Your rk_live_... key. The MCP server is at backend.reki.eu — sign up and create a key at https://mcp.reki.eu/settings/api-keys.",
       "sensitive": true,
       "required": true
     }

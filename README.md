@@ -4,7 +4,7 @@ Connect Claude to **Reki**, a funding copilot for French startups (CIR, JEI, PI 
 
 This repo is a Claude plugin marketplace that ships one plugin: `reki-mcp`. It packages the Reki MCP server configuration so Claude can connect, prompt for your API key, and store it in the OS keychain. The MCP server itself ships its own guidance (when to call `ask_reki`, how to format the query, file-handling rules) via the protocol — no separate skill file required.
 
-> You need a Reki account and an API key to use this plugin. Sign up and create a key at <https://mcp.reki.eu/settings/api-keys>.
+> You need a Reki account and an API key to use this plugin. The MCP server lives at `backend.reki.eu` — sign up and create a key at <https://mcp.reki.eu/settings/api-keys>.
 
 ## Install
 
