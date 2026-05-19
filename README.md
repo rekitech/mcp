@@ -2,7 +2,7 @@
 
 Connect Claude to **Reki**, a funding copilot for French startups (CIR, JEI, PI R&D, BPI, France 2030, Eurostars).
 
-This repo is a Claude plugin marketplace that ships one plugin: `reki-mcp`. It packages the Reki MCP server configuration plus a skill that tells Claude when to call it.
+This repo is a Claude plugin marketplace that ships one plugin: `reki-mcp`. It packages the Reki MCP server configuration so Claude can connect, prompt for your API key, and store it in the OS keychain. The MCP server itself ships its own guidance (when to call `ask_reki`, how to format the query, file-handling rules) via the protocol — no separate skill file required.
 
 > You need a Reki account and an API key to use this plugin. Sign up and create a key at <https://mcp.reki.eu/settings/api-keys>.
 
@@ -54,7 +54,7 @@ Once installed, just ask Claude in natural language. Examples:
 - "Audite mon dossier avant que je dépose."
 - "Prépare-moi un brief pour mon RDV avec un chargé d'affaires BPI."
 
-The `using-reki` skill bundled with the plugin tells Claude when to route a question through Reki. Multi-turn conversations stay coherent for ~30 minutes of inactivity — no need to repeat context.
+The MCP server delivers its own guidance to Claude (when to route a question through Reki, query formatting, local file-handling rules) via the standard MCP `initialize` handshake and tool descriptions — no plugin reinstall needed to update it. Multi-turn conversations stay coherent for ~30 minutes of inactivity, no need to repeat context.
 
 ## What's inside
 
@@ -66,10 +66,7 @@ The `using-reki` skill bundled with the plugin tells Claude when to route a ques
     └── reki-mcp/
         ├── .claude-plugin/
         │   └── plugin.json       ← plugin manifest + userConfig prompt
-        ├── .mcp.json             ← MCP server config (HTTP transport)
-        └── skills/
-            └── using-reki/
-                └── SKILL.md      ← when/how Claude should call ask_reki
+        └── .mcp.json             ← MCP server config (HTTP transport)
 ```
 
 ## License
